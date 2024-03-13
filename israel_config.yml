@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combined Page</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Estilos para a página de login */
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .login-container label {
+            margin-bottom: 10px;
+        }
+        
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        .login-container button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Estilos para o menu */
+        .menu-container {
+            width: 200px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+        
+        .menu-container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .menu-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .menu-container li {
+            margin-bottom: 10px;
+        }
+        
+        .menu-container li ul {
+            margin-top: 5px;
+        }
+        
+        .menu-container li ul li {
+            margin-left: 20px;
+        }
+        
+        /* Estilos para o formulário */
+        .form-container {
+            width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .form-container label {
+            margin-bottom: 10px;
+        }
+        
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        .form-container button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Página de Login -->
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="menu.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<!-- Menu -->
+<div class="menu-container">
+    <h2>Menu</h2>
+    <ul>
+        <li>Item 1
+            <ul>
+                <li>Subitem 1.1</li>
+                <li>Subitem 1.2</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Subitem 2.1</li>
+                <li>Subitem 2.2</li>
+            </ul>
+        </li>
+        <li>Item 3
+            <ul>
+                <li>Subitem 3.1</li>
+                <li>Subitem 3.2</li>
+            </ul>
+        </li>
+        <li>Item 4
+            <ul>
+                <li>Subitem 4.1</li>
+                <li>Subitem 4.2</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<!-- Formulário -->
+<div class="form-container">
+    <h2>Formulário</h2>
+    <form action="#">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</div>
+
+</body>
+</html>
