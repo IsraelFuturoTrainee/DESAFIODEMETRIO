@@ -1,3 +1,6 @@
+Para reduzir o consumo de recursos, como memória, podemos otimizar o código HTML e CSS. Uma maneira é reduzir a quantidade de estilos redundantes e simplificar o código. Aqui está uma versão otimizada do código:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,41 +11,45 @@
         /* Estilos gerais */
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         
-        /* Estilos para a página de login */
-        .login-container {
-            width: 300px;
-            margin: 100px auto;
+        /* Estilos para containers */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             text-align: center;
         }
-        
-        .login-container h2 {
+
+        .container h2 {
             margin-bottom: 20px;
         }
         
-        .login-container form {
+        .container form {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         
-        .login-container label {
+        .container label {
             margin-bottom: 10px;
         }
         
-        .login-container input {
+        .container input,
+        .container textarea {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
             box-sizing: border-box;
         }
         
-        .login-container button {
+        .container button {
             padding: 10px 20px;
+            margin-top: 10px;
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -50,24 +57,20 @@
             cursor: pointer;
         }
         
-        .login-container button:hover {
+        .container button:hover {
             background-color: #0056b3;
         }
         
         /* Estilos para o menu */
         .menu-container {
-            width: 200px;
-            margin: 100px auto;
+            max-width: 400px;
+            margin: 50px auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             text-align: left;
         }
-        
-        .menu-container h2 {
-            margin-bottom: 20px;
-        }
-        
+
         .menu-container ul {
             list-style-type: none;
             padding: 0;
@@ -84,58 +87,12 @@
         .menu-container li ul li {
             margin-left: 20px;
         }
-        
-        /* Estilos para o formulário */
-        .form-container {
-            width: 400px;
-            margin: 100px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: center;
-        }
-        
-        .form-container h2 {
-            margin-bottom: 20px;
-        }
-        
-        .form-container form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .form-container label {
-            margin-bottom: 10px;
-        }
-        
-        .form-container input,
-        .form-container textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-        
-        .form-container button {
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        .form-container button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
 
 <!-- Página de Login -->
-<div class="login-container">
+<div class="container">
     <h2>Login</h2>
     <form action="menu.html">
         <label for="username">Username:</label>
@@ -147,7 +104,7 @@
 </div>
 
 <!-- Menu -->
-<div class="menu-container">
+<div class="menu-container container">
     <h2>Menu</h2>
     <ul>
         <li>Item 1
@@ -178,7 +135,7 @@
 </div>
 
 <!-- Formulário -->
-<div class="form-container">
+<div class="container">
     <h2>Formulário</h2>
     <form action="#">
         <label for="name">Nome:</label>
