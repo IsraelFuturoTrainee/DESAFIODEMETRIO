@@ -1,6 +1,3 @@
-Para reduzir o consumo de recursos, como memória, podemos otimizar o código HTML e CSS. Uma maneira é reduzir a quantidade de estilos redundantes e simplificar o código. Aqui está uma versão otimizada do código:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
